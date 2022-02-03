@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Trip planner</title>
+</head>
+<body>
+    <main class="main-container">
+        <div class="menu-container">
+            <div class="navbar-container">
+                <p>Trip planner</p>
+            </div>
+            <div class="categories-container">
+                <button id="restaurants" class="category restaurants">Restaurants</button>
+                <button id="drinks" class="category drinks">Drinks</button>
+                <button id="parks" class="category parks">Parks</button>
+                <button id="culture" class="category culture">Culture</button>
+                <button id="shops" class="category shops">Shops</button>
+
+            </div>
+            <div id="planner-container" class="planner-container">
+                
+                <div id="origin-container" class="origin-container route-container">
+                    <object data="/assets/origin.svg" width="15" height="15"></object>
+                </div>
+                <div id="waypoints-container" class="route-container">
+                    <!--  
+                            Waypoints 
+                    -->                    
+                </div>
+                <div id="destination-container" class="destination-container route-container">
+                    <object data="/assets/destination.svg" width="15" height="15"></object>
+                </div>
+                <button id="clear-route" class="clear-route">
+                    <p id="clear-route-text">Clear route</p>
+                </button>
+                <button id="generate-route" class="generate-route">
+                    <p id="generate-route-text">Generate route</p>
+                </button>
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="search-container">
+                <input id="search-input" type="text" placeholder="Search a place"/>
+            </div>
+            <div id="toolbox" class="toolbox-container">
+                <button id="clear-markers">Clear markers</button>
+                <button id="set-origin">Set as origin</button>
+                <button id="set-waypoint">Set as waypoint</button>
+                <button id="set-destination">Set as destination</button>
+            </div>
+            <div id="map">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=[YOUR_API_KEY]&callback=initMap&libraries=places&region=EN&language=en"
+      async defer
+    ></script>
+</body>
+</html>
