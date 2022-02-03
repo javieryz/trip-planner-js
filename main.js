@@ -346,12 +346,3 @@ clearRoute.addEventListener('click', () => {
     waypoints = [];
     destination = undefined;    
 });
-
-/*
-    Queda por hacer:
-    - Obtener la localización del usuario
-    - Añadir CSS a título, filtros, ruta, botones de ruta
-    - Escuchar click en Generate Route y generar la ruta en el mapa
-
-    - Almacenamiento
-*/
